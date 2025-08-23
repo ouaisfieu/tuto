@@ -2,12 +2,12 @@
 title: "L'article 11 de la DUDH face à l'épreuve du réel : quand les droits universels s'arrêtent aux frontières"
 date: 2025-08-07
 description: "Comment l'article 11 de la Déclaration universelle, pilier de la justice moderne, révèle les contradictions profondes de nos systèmes démocratiques face aux migrants, à la surveillance et aux logiques d'exception."
-author: ouaisfi.eu
-tags: ["DUDH", "Justice sociale"]
 type: posts
-images: 
-- "/1160/images/share-default.jpg"
-featuredImage: "/1160/images/share-default.jpg"
+images:
+  - "https://dl.ouaisfi.eu/1160/images/share-default.jpg"
+featuredImage: "https://dl.ouaisfi.eu/1160/images/share-default.jpg"
+type: posts
+author: "ouaisfi.eu"
 
 ---
 

@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Tutoriel</title>
-    <link>http://localhost:1313/tuto/categories/</link>
+    <link>https://tonpseudo.github.io/tuto/categories/</link>
     <description>Recent content in Categories on Tutoriel</description>
     <generator>Hugo</generator>
     <language>fr</language>
     <lastBuildDate>Sat, 23 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tuto/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tonpseudo.github.io/tuto/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dossiers</title>
-      <link>http://localhost:1313/tuto/categories/dossiers/</link>
+      <link>https://tonpseudo.github.io/tuto/categories/dossiers/</link>
       <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/categories/dossiers/</guid>
+      <guid>https://tonpseudo.github.io/tuto/categories/dossiers/</guid>
       <description></description>
     </item>
     <item>
       <title>Kits</title>
-      <link>http://localhost:1313/tuto/categories/kits/</link>
+      <link>https://tonpseudo.github.io/tuto/categories/kits/</link>
       <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/categories/kits/</guid>
+      <guid>https://tonpseudo.github.io/tuto/categories/kits/</guid>
       <description></description>
     </item>
     <item>
       <title>Outils</title>
-      <link>http://localhost:1313/tuto/categories/outils/</link>
+      <link>https://tonpseudo.github.io/tuto/categories/outils/</link>
       <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/categories/outils/</guid>
+      <guid>https://tonpseudo.github.io/tuto/categories/outils/</guid>
       <description></description>
     </item>
     <item>
       <title>Belgique</title>
-      <link>http://localhost:1313/tuto/categories/belgique/</link>
+      <link>https://tonpseudo.github.io/tuto/categories/belgique/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/categories/belgique/</guid>
+      <guid>https://tonpseudo.github.io/tuto/categories/belgique/</guid>
       <description></description>
     </item>
     <item>
       <title>Géopolitique</title>
-      <link>http://localhost:1313/tuto/categories/g%C3%A9opolitique/</link>
+      <link>https://tonpseudo.github.io/tuto/categories/g%C3%A9opolitique/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/categories/g%C3%A9opolitique/</guid>
+      <guid>https://tonpseudo.github.io/tuto/categories/g%C3%A9opolitique/</guid>
       <description></description>
     </item>
     <item>
       <title>Analyses</title>
-      <link>http://localhost:1313/tuto/categories/analyses/</link>
+      <link>https://tonpseudo.github.io/tuto/categories/analyses/</link>
       <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/categories/analyses/</guid>
+      <guid>https://tonpseudo.github.io/tuto/categories/analyses/</guid>
       <description></description>
     </item>
     <item>
       <title>Analyse Politique</title>
-      <link>http://localhost:1313/tuto/categories/analyse-politique/</link>
+      <link>https://tonpseudo.github.io/tuto/categories/analyse-politique/</link>
       <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/categories/analyse-politique/</guid>
+      <guid>https://tonpseudo.github.io/tuto/categories/analyse-politique/</guid>
       <description></description>
     </item>
     <item>
       <title>Europe</title>
-      <link>http://localhost:1313/tuto/categories/europe/</link>
+      <link>https://tonpseudo.github.io/tuto/categories/europe/</link>
       <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/categories/europe/</guid>
+      <guid>https://tonpseudo.github.io/tuto/categories/europe/</guid>
       <description></description>
     </item>
     <item>
       <title>Histoire Sociale</title>
-      <link>http://localhost:1313/tuto/categories/histoire-sociale/</link>
+      <link>https://tonpseudo.github.io/tuto/categories/histoire-sociale/</link>
       <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/categories/histoire-sociale/</guid>
+      <guid>https://tonpseudo.github.io/tuto/categories/histoire-sociale/</guid>
       <description></description>
     </item>
   </channel>

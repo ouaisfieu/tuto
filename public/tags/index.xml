@@ -2,507 +2,493 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Tutoriel</title>
-    <link>http://localhost:1313/tuto/tags/</link>
+    <link>https://tonpseudo.github.io/tuto/tags/</link>
     <description>Recent content in Tags on Tutoriel</description>
     <generator>Hugo</generator>
     <language>fr</language>
     <lastBuildDate>Sat, 23 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tuto/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tonpseudo.github.io/tuto/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apprentissage</title>
-      <link>http://localhost:1313/tuto/tags/apprentissage/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/apprentissage/</link>
       <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/apprentissage/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/apprentissage/</guid>
       <description></description>
     </item>
     <item>
       <title>Belgique</title>
-      <link>http://localhost:1313/tuto/tags/belgique/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/belgique/</link>
       <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/belgique/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/belgique/</guid>
       <description></description>
     </item>
     <item>
       <title>Éducation Populaire</title>
-      <link>http://localhost:1313/tuto/tags/%C3%A9ducation-populaire/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/%C3%A9ducation-populaire/</link>
       <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/%C3%A9ducation-populaire/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/%C3%A9ducation-populaire/</guid>
       <description></description>
     </item>
     <item>
       <title>France</title>
-      <link>http://localhost:1313/tuto/tags/france/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/france/</link>
       <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/france/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/france/</guid>
       <description></description>
     </item>
     <item>
       <title>Kits Thématiques</title>
-      <link>http://localhost:1313/tuto/tags/kits-th%C3%A9matiques/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/kits-th%C3%A9matiques/</link>
       <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/kits-th%C3%A9matiques/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/kits-th%C3%A9matiques/</guid>
       <description></description>
     </item>
     <item>
       <title>Markdown</title>
-      <link>http://localhost:1313/tuto/tags/markdown/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/markdown/</link>
       <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/markdown/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/markdown/</guid>
       <description></description>
     </item>
     <item>
       <title>Médias</title>
-      <link>http://localhost:1313/tuto/tags/m%C3%A9dias/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/m%C3%A9dias/</link>
       <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/m%C3%A9dias/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/m%C3%A9dias/</guid>
       <description></description>
     </item>
     <item>
       <title>Notetaking</title>
-      <link>http://localhost:1313/tuto/tags/notetaking/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/notetaking/</link>
       <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/notetaking/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/notetaking/</guid>
       <description></description>
     </item>
     <item>
       <title>Pédagogie</title>
-      <link>http://localhost:1313/tuto/tags/p%C3%A9dagogie/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/p%C3%A9dagogie/</link>
       <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/p%C3%A9dagogie/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/p%C3%A9dagogie/</guid>
       <description></description>
     </item>
     <item>
       <title>Civic Tech</title>
-      <link>http://localhost:1313/tuto/tags/civic-tech/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/civic-tech/</link>
       <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/civic-tech/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/civic-tech/</guid>
       <description></description>
     </item>
     <item>
       <title>Démocratie</title>
-      <link>http://localhost:1313/tuto/tags/d%C3%A9mocratie/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/d%C3%A9mocratie/</link>
       <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/d%C3%A9mocratie/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/d%C3%A9mocratie/</guid>
       <description></description>
     </item>
     <item>
       <title>Gouvernance</title>
-      <link>http://localhost:1313/tuto/tags/gouvernance/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/gouvernance/</link>
       <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/gouvernance/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/gouvernance/</guid>
       <description></description>
     </item>
     <item>
       <title>Participation Citoyenne</title>
-      <link>http://localhost:1313/tuto/tags/participation-citoyenne/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/participation-citoyenne/</link>
       <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/participation-citoyenne/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/participation-citoyenne/</guid>
       <description></description>
     </item>
     <item>
       <title>Transparence</title>
-      <link>http://localhost:1313/tuto/tags/transparence/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/transparence/</link>
       <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/transparence/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/transparence/</guid>
       <description></description>
     </item>
     <item>
       <title>Veille</title>
-      <link>http://localhost:1313/tuto/tags/veille/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/veille/</link>
       <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/veille/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/veille/</guid>
       <description></description>
     </item>
     <item>
       <title>GitHub</title>
-      <link>http://localhost:1313/tuto/tags/github/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/github/</link>
       <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/github/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>IA</title>
-      <link>http://localhost:1313/tuto/tags/ia/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/ia/</link>
       <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/ia/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/ia/</guid>
       <description></description>
     </item>
     <item>
       <title>Jekyll</title>
-      <link>http://localhost:1313/tuto/tags/jekyll/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/jekyll/</link>
       <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/jekyll/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/jekyll/</guid>
       <description></description>
     </item>
     <item>
       <title>Recherche Collaborative</title>
-      <link>http://localhost:1313/tuto/tags/recherche-collaborative/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/recherche-collaborative/</link>
       <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/recherche-collaborative/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/recherche-collaborative/</guid>
       <description></description>
     </item>
     <item>
       <title>Culture</title>
-      <link>http://localhost:1313/tuto/tags/culture/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/culture/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/culture/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DUDH</title>
-      <link>http://localhost:1313/tuto/tags/dudh/</link>
-      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/dudh/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/culture/</guid>
       <description></description>
     </item>
     <item>
       <title>Europe</title>
-      <link>http://localhost:1313/tuto/tags/europe/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/europe/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/europe/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/europe/</guid>
       <description></description>
     </item>
     <item>
       <title>Histoire</title>
-      <link>http://localhost:1313/tuto/tags/histoire/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/histoire/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/histoire/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Justice Sociale</title>
-      <link>http://localhost:1313/tuto/tags/justice-sociale/</link>
-      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/justice-sociale/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/histoire/</guid>
       <description></description>
     </item>
     <item>
       <title>Politique</title>
-      <link>http://localhost:1313/tuto/tags/politique/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/politique/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/politique/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/politique/</guid>
       <description></description>
     </item>
     <item>
       <title>Société</title>
-      <link>http://localhost:1313/tuto/tags/soci%C3%A9t%C3%A9/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/soci%C3%A9t%C3%A9/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/soci%C3%A9t%C3%A9/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/soci%C3%A9t%C3%A9/</guid>
       <description></description>
     </item>
     <item>
       <title>Archétypes</title>
-      <link>http://localhost:1313/tuto/tags/arch%C3%A9types/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/arch%C3%A9types/</link>
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/arch%C3%A9types/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/arch%C3%A9types/</guid>
       <description></description>
     </item>
     <item>
       <title>Dynamiques De Groupe</title>
-      <link>http://localhost:1313/tuto/tags/dynamiques-de-groupe/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/dynamiques-de-groupe/</link>
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/dynamiques-de-groupe/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/dynamiques-de-groupe/</guid>
       <description></description>
     </item>
     <item>
       <title>Gestion De Projet</title>
-      <link>http://localhost:1313/tuto/tags/gestion-de-projet/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/gestion-de-projet/</link>
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/gestion-de-projet/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/gestion-de-projet/</guid>
       <description></description>
     </item>
     <item>
       <title>Leadership</title>
-      <link>http://localhost:1313/tuto/tags/leadership/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/leadership/</link>
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/leadership/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/leadership/</guid>
       <description></description>
     </item>
     <item>
       <title>Management</title>
-      <link>http://localhost:1313/tuto/tags/management/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/management/</link>
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/management/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/management/</guid>
       <description></description>
     </item>
     <item>
       <title>Psychologie Sociale</title>
-      <link>http://localhost:1313/tuto/tags/psychologie-sociale/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/psychologie-sociale/</link>
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/psychologie-sociale/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/psychologie-sociale/</guid>
       <description></description>
     </item>
     <item>
       <title>Ressources Humaines</title>
-      <link>http://localhost:1313/tuto/tags/ressources-humaines/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/ressources-humaines/</link>
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/ressources-humaines/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/ressources-humaines/</guid>
       <description></description>
     </item>
     <item>
       <title>Travail D&#39;équipe</title>
-      <link>http://localhost:1313/tuto/tags/travail-d%C3%A9quipe/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/travail-d%C3%A9quipe/</link>
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/travail-d%C3%A9quipe/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/travail-d%C3%A9quipe/</guid>
       <description></description>
     </item>
     <item>
       <title>Bien-Être</title>
-      <link>http://localhost:1313/tuto/tags/bien-%C3%AAtre/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/bien-%C3%AAtre/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/bien-%C3%AAtre/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/bien-%C3%AAtre/</guid>
       <description></description>
     </item>
     <item>
       <title>Développement Personnel</title>
-      <link>http://localhost:1313/tuto/tags/d%C3%A9veloppement-personnel/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/d%C3%A9veloppement-personnel/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/d%C3%A9veloppement-personnel/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/d%C3%A9veloppement-personnel/</guid>
       <description></description>
     </item>
     <item>
       <title>Émotions</title>
-      <link>http://localhost:1313/tuto/tags/%C3%A9motions/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/%C3%A9motions/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/%C3%A9motions/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/%C3%A9motions/</guid>
       <description></description>
     </item>
     <item>
       <title>Intelligence Émotionnelle</title>
-      <link>http://localhost:1313/tuto/tags/intelligence-%C3%A9motionnelle/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/intelligence-%C3%A9motionnelle/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/intelligence-%C3%A9motionnelle/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/intelligence-%C3%A9motionnelle/</guid>
       <description></description>
     </item>
     <item>
       <title>Neurosciences</title>
-      <link>http://localhost:1313/tuto/tags/neurosciences/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/neurosciences/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/neurosciences/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/neurosciences/</guid>
       <description></description>
     </item>
     <item>
       <title>Psychologie</title>
-      <link>http://localhost:1313/tuto/tags/psychologie/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/psychologie/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/psychologie/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/psychologie/</guid>
       <description></description>
     </item>
     <item>
       <title>Régulation Émotionnelle</title>
-      <link>http://localhost:1313/tuto/tags/r%C3%A9gulation-%C3%A9motionnelle/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/r%C3%A9gulation-%C3%A9motionnelle/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/r%C3%A9gulation-%C3%A9motionnelle/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/r%C3%A9gulation-%C3%A9motionnelle/</guid>
       <description></description>
     </item>
     <item>
       <title>Santé Mentale</title>
-      <link>http://localhost:1313/tuto/tags/sant%C3%A9-mentale/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/sant%C3%A9-mentale/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/sant%C3%A9-mentale/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/sant%C3%A9-mentale/</guid>
       <description></description>
     </item>
     <item>
       <title>Sentiments</title>
-      <link>http://localhost:1313/tuto/tags/sentiments/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/sentiments/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/sentiments/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/sentiments/</guid>
       <description></description>
     </item>
     <item>
       <title>Dossier</title>
-      <link>http://localhost:1313/tuto/tags/dossier/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/dossier/</link>
       <pubDate>Mon, 28 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/dossier/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/dossier/</guid>
       <description></description>
     </item>
     <item>
       <title>Template</title>
-      <link>http://localhost:1313/tuto/tags/template/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/template/</link>
       <pubDate>Mon, 28 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/template/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/template/</guid>
       <description></description>
     </item>
     <item>
       <title>Développement Organisationnel</title>
-      <link>http://localhost:1313/tuto/tags/d%C3%A9veloppement-organisationnel/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/d%C3%A9veloppement-organisationnel/</link>
       <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/d%C3%A9veloppement-organisationnel/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/d%C3%A9veloppement-organisationnel/</guid>
       <description></description>
     </item>
     <item>
       <title>Innovation Pédagogique</title>
-      <link>http://localhost:1313/tuto/tags/innovation-p%C3%A9dagogique/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/innovation-p%C3%A9dagogique/</link>
       <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/innovation-p%C3%A9dagogique/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/innovation-p%C3%A9dagogique/</guid>
       <description></description>
     </item>
     <item>
       <title>Intelligence Collective</title>
-      <link>http://localhost:1313/tuto/tags/intelligence-collective/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/intelligence-collective/</link>
       <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/intelligence-collective/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/intelligence-collective/</guid>
       <description></description>
     </item>
     <item>
       <title>Organisation</title>
-      <link>http://localhost:1313/tuto/tags/organisation/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/organisation/</link>
       <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/organisation/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/organisation/</guid>
       <description></description>
     </item>
     <item>
       <title>Outils De Formation</title>
-      <link>http://localhost:1313/tuto/tags/outils-de-formation/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/outils-de-formation/</link>
       <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/outils-de-formation/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/outils-de-formation/</guid>
       <description></description>
     </item>
     <item>
       <title>Symbolisme</title>
-      <link>http://localhost:1313/tuto/tags/symbolisme/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/symbolisme/</link>
       <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/symbolisme/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/symbolisme/</guid>
       <description></description>
     </item>
     <item>
       <title>Tarot</title>
-      <link>http://localhost:1313/tuto/tags/tarot/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/tarot/</link>
       <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/tarot/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/tarot/</guid>
       <description></description>
     </item>
     <item>
       <title>Austérité</title>
-      <link>http://localhost:1313/tuto/tags/aust%C3%A9rit%C3%A9/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/aust%C3%A9rit%C3%A9/</link>
       <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/aust%C3%A9rit%C3%A9/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/aust%C3%A9rit%C3%A9/</guid>
       <description></description>
     </item>
     <item>
       <title>Grèves</title>
-      <link>http://localhost:1313/tuto/tags/gr%C3%A8ves/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/gr%C3%A8ves/</link>
       <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/gr%C3%A8ves/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/gr%C3%A8ves/</guid>
       <description></description>
     </item>
     <item>
       <title>Mouvements Sociaux</title>
-      <link>http://localhost:1313/tuto/tags/mouvements-sociaux/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/mouvements-sociaux/</link>
       <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/mouvements-sociaux/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/mouvements-sociaux/</guid>
       <description></description>
     </item>
     <item>
       <title>Politique Économique</title>
-      <link>http://localhost:1313/tuto/tags/politique-%C3%A9conomique/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/politique-%C3%A9conomique/</link>
       <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/politique-%C3%A9conomique/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/politique-%C3%A9conomique/</guid>
       <description></description>
     </item>
     <item>
       <title>Analyse</title>
-      <link>http://localhost:1313/tuto/tags/analyse/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/analyse/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/analyse/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/analyse/</guid>
       <description></description>
     </item>
     <item>
       <title>Astrologie</title>
-      <link>http://localhost:1313/tuto/tags/astrologie/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/astrologie/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/astrologie/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/astrologie/</guid>
       <description></description>
     </item>
     <item>
       <title>Astrologie Chinoise</title>
-      <link>http://localhost:1313/tuto/tags/astrologie-chinoise/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/astrologie-chinoise/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/astrologie-chinoise/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/astrologie-chinoise/</guid>
       <description></description>
     </item>
     <item>
       <title>Critique</title>
-      <link>http://localhost:1313/tuto/tags/critique/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/critique/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/critique/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/critique/</guid>
       <description></description>
     </item>
     <item>
       <title>Culture Populaire</title>
-      <link>http://localhost:1313/tuto/tags/culture-populaire/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/culture-populaire/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/culture-populaire/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/culture-populaire/</guid>
       <description></description>
     </item>
     <item>
       <title>Éléments</title>
-      <link>http://localhost:1313/tuto/tags/%C3%A9l%C3%A9ments/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/%C3%A9l%C3%A9ments/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/%C3%A9l%C3%A9ments/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/%C3%A9l%C3%A9ments/</guid>
       <description></description>
     </item>
     <item>
       <title>Planètes</title>
-      <link>http://localhost:1313/tuto/tags/plan%C3%A8tes/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/plan%C3%A8tes/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/plan%C3%A8tes/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/plan%C3%A8tes/</guid>
       <description></description>
     </item>
     <item>
       <title>Tradition</title>
-      <link>http://localhost:1313/tuto/tags/tradition/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/tradition/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/tradition/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/tradition/</guid>
       <description></description>
     </item>
     <item>
       <title>Zodiaque</title>
-      <link>http://localhost:1313/tuto/tags/zodiaque/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/zodiaque/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/zodiaque/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/zodiaque/</guid>
       <description></description>
     </item>
     <item>
       <title>Associations</title>
-      <link>http://localhost:1313/tuto/tags/associations/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/associations/</link>
       <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/associations/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/associations/</guid>
       <description></description>
     </item>
     <item>
       <title>Documentation</title>
-      <link>http://localhost:1313/tuto/tags/documentation/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/documentation/</link>
       <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/documentation/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/documentation/</guid>
       <description></description>
     </item>
     <item>
       <title>Éducation Permanente</title>
-      <link>http://localhost:1313/tuto/tags/%C3%A9ducation-permanente/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/%C3%A9ducation-permanente/</link>
       <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/%C3%A9ducation-permanente/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/%C3%A9ducation-permanente/</guid>
       <description></description>
     </item>
     <item>
       <title>FWB</title>
-      <link>http://localhost:1313/tuto/tags/fwb/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/fwb/</link>
       <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/fwb/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/fwb/</guid>
       <description></description>
     </item>
     <item>
       <title>Ressources Pédagogiques</title>
-      <link>http://localhost:1313/tuto/tags/ressources-p%C3%A9dagogiques/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/ressources-p%C3%A9dagogiques/</link>
       <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/ressources-p%C3%A9dagogiques/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/ressources-p%C3%A9dagogiques/</guid>
       <description></description>
     </item>
     <item>
       <title>Intelligence Économique</title>
-      <link>http://localhost:1313/tuto/tags/intelligence-%C3%A9conomique/</link>
+      <link>https://tonpseudo.github.io/tuto/tags/intelligence-%C3%A9conomique/</link>
       <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tuto/tags/intelligence-%C3%A9conomique/</guid>
+      <guid>https://tonpseudo.github.io/tuto/tags/intelligence-%C3%A9conomique/</guid>
       <description></description>
     </item>
   </channel>

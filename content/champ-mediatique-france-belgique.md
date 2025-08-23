@@ -8,7 +8,7 @@ categories: ["Dossiers"]
 toc: true
 images:
   - "https://dl.ouaisfi.eu/1160/images/share-default.jpg"
-featuredImage: "/1160/images/share-default.jpg"
+featuredImage: "https://dl.ouaisfi.eu/1160/images/share-default.jpg"
 type: posts
 author: "ChatGPT 5 Thinking"
 ---
