@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Austérité - Tag - Tutoriel</title>
+    <link>http://localhost:1313/tuto/tags/aust%C3%A9rit%C3%A9/</link>
+    <description>Tutoriel</description>
+    <generator>Hugo 0.148.1 &amp; FixIt v0.4.0-alpha-20250823084643-0f68046a</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 24 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tuto/tags/aust%C3%A9rit%C3%A9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quand l&#39;Europe se souvient de ses grèves</title>
+      <link>http://localhost:1313/tuto/greves-de-60/</link>
+      <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tuto/greves-de-60/</guid>
+      <category domain="http://localhost:1313/tuto/categories/histoire-sociale/">Histoire Sociale</category>
+      <category domain="http://localhost:1313/tuto/categories/analyse-politique/">Analyse Politique</category>
+      <category domain="http://localhost:1313/tuto/categories/europe/">Europe</category>
+      <description>&lt;div class=&#34;details admonition tip&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;details-summary admonition-title&#34;&gt;&lt;i class=&#34;icon fa-fw fa-regular fa-lightbulb&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;TL;DR&lt;i class=&#34;details-icon fa-solid fa-angle-right fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;details-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;admonition-content&#34;&gt;Les grèves belges de 1960-1961 contre la &amp;ldquo;Loi unique&amp;rdquo; d&amp;rsquo;austérité préfigurent les mobilisations européennes contemporaines. Six semaines de paralysie nationale en Belgique éclairent les mécanismes durables de résistance aux politiques de rigueur, des Indignés espagnols aux Gilets jaunes français.&lt;/div&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;La &lt;strong&gt;&amp;ldquo;grève du siècle&amp;rdquo;&lt;/strong&gt; belge de 1960-1961 contre l&amp;rsquo;austérité résonne étrangement avec les mobilisations européennes récentes face aux politiques de rigueur. En six semaines d&amp;rsquo;hiver, plus d&amp;rsquo;un million de Belges ont paralysé leur pays contre la &amp;ldquo;Loi unique&amp;rdquo; d&amp;rsquo;austérité, préfigurant les mouvements anti-austérité qui ont secoué l&amp;rsquo;Europe depuis 2008. Des ronds-points des Gilets jaunes aux places occupées par les Indignés, en passant par les grèves générales grecques, l&amp;rsquo;histoire se répète avec des variations instructives.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

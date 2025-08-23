@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DUDH - Tag - Tutoriel</title>
+    <link>http://localhost:1313/tuto/tags/dudh/</link>
+    <description>Tutoriel</description>
+    <generator>Hugo 0.148.1 &amp; FixIt v0.4.0-alpha-20250823084643-0f68046a</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 07 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tuto/tags/dudh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>L&#39;article 11 de la DUDH face à l&#39;épreuve du réel : quand les droits universels s&#39;arrêtent aux frontières</title>
+      <link>http://localhost:1313/tuto/article-11-dudh/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tuto/article-11-dudh/</guid>
+      <description>&lt;p&gt;Tout a commencé par une question simple : &lt;em&gt;« TL;DR de la DUDH ? »&lt;/em&gt;&lt;br&gt;&#xA;La Déclaration universelle des droits humains (1948) compte &lt;strong&gt;30 articles&lt;/strong&gt;. Elle proclame que &lt;em&gt;« tous les êtres humains naissent libres et égaux en dignité et en droits »&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Aujourd’hui, beaucoup préfèrent parler de &lt;strong&gt;droits humains&lt;/strong&gt; plutôt que de « droits de l’homme », afin de marquer l’universalité du texte. Les femmes en sont évidemment incluses, mais leur expérience spécifique a nécessité des textes complémentaires (CEDAW, 1979).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

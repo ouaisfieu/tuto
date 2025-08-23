@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="fr">
+  <head><script src="/tuto/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=tuto/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Notre Magasin De Fichiers &#43; Audit Critique - Tutoriel</title><meta name="author" content="ouaisfi.eu">
+<meta name="description" content="Retour d’expérience sur le projet « Magasin de fichiers » : points forts, limites et recommandations concrètes pour une diffusion publique propre via Hugo/FixIt.">
+  <meta itemprop="name" content="Notre Magasin de fichiers &#43; audit critique">
+  <meta itemprop="description" content="Retour d’expérience sur le projet « Magasin de fichiers » : points forts, limites et recommandations concrètes pour une diffusion publique propre via Hugo/FixIt.">
+  <meta itemprop="datePublished" content="2025-08-22T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-08-22T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1599">
+  <meta itemprop="image" content="https://dl.ouaisfi.eu/1160/images/jason-manifest-json.jpg">
+  <meta itemprop="keywords" content="Outils"><meta property="og:url" content="http://localhost:1313/tuto/stress-test-magasin/">
+  <meta property="og:site_name" content="Tutoriel">
+  <meta property="og:title" content="Notre Magasin de fichiers &#43; audit critique">
+  <meta property="og:description" content="Retour d’expérience sur le projet « Magasin de fichiers » : points forts, limites et recommandations concrètes pour une diffusion publique propre via Hugo/FixIt.">
+  <meta property="og:locale" content="fr">
+  <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2025-08-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-08-22T00:00:00+00:00">
+    <meta property="og:image" content="https://dl.ouaisfi.eu/1160/images/jason-manifest-json.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dl.ouaisfi.eu/1160/images/jason-manifest-json.jpg">
+  <meta name="twitter:title" content="Notre Magasin de fichiers &#43; audit critique">
+  <meta name="twitter:description" content="Retour d’expérience sur le projet « Magasin de fichiers » : points forts, limites et recommandations concrètes pour une diffusion publique propre via Hugo/FixIt.">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:1313/tuto/stress-test-magasin/" title="Notre Magasin de fichiers &#43; audit critique - Tutoriel" /><link rel="prev" type="text/html" href="http://localhost:1313/tuto/extreme-droite-en-belgique-depuis-1945/" title="L&#39;extrême droite en Belgique depuis 1945 : Entre cordon sanitaire et contamination idéologique" /><link rel="next" type="text/html" href="http://localhost:1313/tuto/kits-fichiers-thematiques/" title="Les Kits de Fichiers Thématiques : Une Nouvelle Façon d&#39;Apprendre" /><link rel="stylesheet" href="/tuto/css/config.min.css"><link rel="stylesheet" href="/tuto/css/style.min.css"><link rel="preload" href="/tuto/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/tuto/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/tuto/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/tuto/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Notre Magasin de fichiers + audit critique",
+    "inLanguage": "fr",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:1313\/tuto\/stress-test-magasin\/"
+    },"genre": "posts","wordcount":  1599 ,
+    "url": "http:\/\/localhost:1313\/tuto\/stress-test-magasin\/","datePublished": "2025-08-22T00:00:00+00:00","dateModified": "2025-08-22T00:00:00+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "ouaisfi.eu"
+      },"description": "Retour d’expérience sur le projet « Magasin de fichiers » : points forts, limites et recommandations concrètes pour une diffusion publique propre via Hugo/FixIt."
+  }
+  </script><script src="/tuto/js/head/color-scheme.min.js"></script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/tuto/" title="Tutoriel"><span class="header-title-text">Tutoriel</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/tuto/archives/"><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Archives</a></li><li class="menu-item">
+              <a class="menu-link" href="/tuto/categories/"><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item">
+              <a class="menu-link" href="/tuto/tags/"><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/tuto/" title="Tutoriel"><span class="header-title-text">Tutoriel</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="menu-item"><a class="menu-link" href="/tuto/archives/"><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Archives</a></li><li class="menu-item"><a class="menu-link" href="/tuto/categories/"><i class="fa-solid fa-folder-tree fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item"><a class="menu-link" href="/tuto/tags/"><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="fi-container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Notre Magasin De Fichiers &#43; Audit Critique</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      ouaisfi.eu</span></span><span class="post-included-in">&nbsp;included in <a href="/tuto/categories/outils/" class="post-category" title="Category - Outils"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Outils</a></span></div><div class="post-meta-line"><span title="published on 2025-08-22 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2025-08-22">2025-08-22</time></span>&nbsp;<span title="1599 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 1600 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>8 minutes</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#pourquoi-ce-projet-">Pourquoi ce projet ?</a></li>
+    <li><a href="#le-cœur--des-contenus-qui-donnent-envie-de-creuser">Le cœur : des contenus qui donnent envie de creuser</a>
+      <ul>
+        <li><a href="#1-citoyenneté--veille-pour-comprendre-et-agir">1) Citoyenneté &amp; veille (pour comprendre et agir)</a></li>
+        <li><a href="#2-outillage--méthode-pour-sorganiser">2) Outillage &amp; méthode (pour s’organiser)</a></li>
+        <li><a href="#3-kits-thématiques----à-structurer-pour-le-public">3) Kits thématiques « ☯ » (à structurer pour le public)</a></li>
+        <li><a href="#4-culture--société-pour-alimenter-le-débat">4) Culture &amp; société (pour alimenter le débat)</a></li>
+      </ul>
+    </li>
+    <li><a href="#ce-que-la-démo-montre-bien">Ce que la démo montre bien</a></li>
+    <li><a href="#répliquer-en-3-étapes">Répliquer en 3 étapes</a></li>
+    <li><a href="#quelques-conseils-éditoriaux-avant-diffusion-large">Quelques conseils éditoriaux (avant diffusion large)</a></li>
+    <li><a href="#en-deux-mots">En deux mots</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#ce-qui-fonctionne-vraiment-bien">Ce qui fonctionne vraiment bien</a></li>
+    <li><a href="#limites-et-risques-priorité-haute">Limites et risques (priorité haute)</a></li>
+    <li><a href="#points-à-améliorer-court-terme">Points à améliorer (court terme)</a>
+      <ul>
+        <li><a href="#a-robustesse-des-liens--encodage">a) Robustesse des liens &amp; encodage</a></li>
+        <li><a href="#b-accessibilité--ux">b) Accessibilité &amp; UX</a></li>
+        <li><a href="#c-seo--partage">c) SEO &amp; partage</a></li>
+        <li><a href="#d-gouvernance-éditoriale">d) Gouvernance éditoriale</a></li>
+      </ul>
+    </li>
+    <li><a href="#recommandations-concrètes">Recommandations concrètes</a>
+      <ul>
+        <li><a href="#1-front-matter-social-propre-dans-indexhtml-ou-layout-hugo">1) Front-matter social propre (dans <code>index.html</code> ou layout Hugo)</a></li>
+        <li><a href="#2-exemple-ditem-robuste-à-utiliser-comme-modèle">2) Exemple d’item <strong>robuste</strong> à utiliser comme modèle</a></li>
+        <li><a href="#3-nettoyage--grand-public-">3) Nettoyage « grand public »</a></li>
+      </ul>
+    </li>
+    <li><a href="#verdict">Verdict</a></li>
+    <li><a href="#check-list-rapide-pour-la-prochaine-release">Check-list rapide pour la prochaine release</a>
+      <ul>
+        <li><a href="#notes-techniques-repérées-dans-le-code">Notes techniques repérées dans le code</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><blockquote>
+<p>Un <strong>catalogue 100 % statique</strong> qui s’appuie uniquement sur <code>index.html</code> + <code>manifest.json</code> : aucune base de données, déploiement instantané sur GitHub Pages. </p></blockquote>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
+<h2 class="heading-element" id="pourquoi-ce-projet-"><span>Pourquoi ce projet ?</span>
+  <a href="#pourquoi-ce-projet-" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><ul>
+<li><strong>Mettre en valeur notre corpus</strong> de textes, kits et visuels — consultables en un clic, avec recherche, tags, tri et aperçus.</li>
+<li><strong>Donner envie de faire pareil</strong> : forker, remplacer le manifeste par ses propres ressources, publier.</li>
+</ul>
+<hr>
+<h2 class="heading-element" id="le-cœur--des-contenus-qui-donnent-envie-de-creuser"><span>Le cœur : des contenus qui donnent envie de creuser</span>
+  <a href="#le-c%c5%93ur--des-contenus-qui-donnent-envie-de-creuser" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="1-citoyenneté--veille-pour-comprendre-et-agir"><span>1) Citoyenneté &amp; veille (pour comprendre et agir)</span>
+  <a href="#1-citoyennet%c3%a9--veille-pour-comprendre-et-agir" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
+<li><strong>Kit Citoyen – Volet « Comprendre »</strong> — remettre l’individu dans le collectif et ouvrir le champ de l’action. </li>
+<li><strong>De l’Auftragstaktik à la participation consciente</strong> — passer d’une culture du commandement à la décision distribuée. </li>
+<li><strong>La citoyenneté, c’est le brol</strong> — complexité, règles, papiers… et comment s’y retrouver. </li>
+<li><strong>Veille citoyenne en FWB : enjeux &amp; inclusion</strong> — pourquoi « le regard citoyen » sur l’action publique compte. </li>
+</ul>
+<blockquote>
+<p>Un ensemble cohérent pour lancer un <strong>atelier de veille</strong> : cadrage, outils et posture. </p></blockquote>
+<h3 class="heading-element" id="2-outillage--méthode-pour-sorganiser"><span>2) Outillage &amp; méthode (pour s’organiser)</span>
+  <a href="#2-outillage--m%c3%a9thode-pour-sorganiser" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
+<li><strong>Tutoriel Obsidian (débutant·e)</strong> + <strong>Guide Obsidian pas à pas</strong> — bases PKM, workflow fichiers Markdown. </li>
+<li><strong>Créer sa bibliothèque (tutoriel complet)</strong> — structure, <code>manifest.json</code>, vignettes, déploiement. </li>
+<li><strong>Légende des badges / Effets CSS (fx.css)</strong> — micro-UI lisible (badges, surlignages) pour hiérarchiser les items. </li>
+</ul>
+<blockquote>
+<p>Résultat : on passe <strong>du stock dispersé</strong> à une <strong>bibliothèque navigable</strong> et esthétique, sans framework lourd. </p></blockquote>
+<h3 class="heading-element" id="3-kits-thématiques----à-structurer-pour-le-public"><span>3) Kits thématiques « ☯ » (à structurer pour le public)</span>
+  <a href="#3-kits-th%c3%a9matiques----%c3%a0-structurer-pour-le-public" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
+<li><strong>☯ ASTRO – Kit Markdown</strong> — 24 signes, planètes, éléments… un coffret pédagogique en .zip. <em>(À ouvrir/éditer avant diffusion publique.)</em> </li>
+<li><strong>Autres kits (Émotions, Équipe, Introspection, Valeurs… )</strong> — actuellement notés avec un <strong>mot de passe en clair</strong> dans le manifest → à retirer avant mise en avant publique.</li>
+</ul>
+<h3 class="heading-element" id="4-culture--société-pour-alimenter-le-débat"><span>4) Culture &amp; société (pour alimenter le débat)</span>
+  <a href="#4-culture--soci%c3%a9t%c3%a9-pour-alimenter-le-d%c3%a9bat" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
+<li><strong>Échanges : de l’« intelligence » à la « stupidité » économique</strong> — 5 ruptures pour comprendre nos dépendances. </li>
+<li><strong>Pouvoir d’agir vs hégémonie</strong> — l’information comme levier d’empouvoirement. </li>
+<li><strong>Guerre économique &amp; société civile</strong> — dommages collatéraux des sanctions. </li>
+<li><strong>Visuel « Smoke — Parce que fumer tue »</strong> — message de santé publique percutant, à alléger côté poids d’image. </li>
+</ul>
+<hr>
+<h2 class="heading-element" id="ce-que-la-démo-montre-bien"><span>Ce que la démo montre bien</span>
+  <a href="#ce-que-la-d%c3%a9mo-montre-bien" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><ul>
+<li><strong>Simplicité</strong> : le site charge le <code>manifest.json</code>, construit les cartes, applique recherche et tri (pertinence/récence). </li>
+<li><strong>Aperçus confortables</strong> : PDF/MD/vidéo/image en modal, avec fallback « Ouvrir/Télécharger ». </li>
+<li><strong>Lisibilité</strong> : badges, chips de tags, thème clair/sombre, clavier <code>/</code> pour chercher. </li>
+</ul>
+<hr>
+<h2 class="heading-element" id="répliquer-en-3-étapes"><span>Répliquer en 3 étapes</span>
+  <a href="#r%c3%a9pliquer-en-3-%c3%a9tapes" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><ol>
+<li><strong>Forker</strong> le dépôt → <a href="https://github.com/ouaisfieu/magasin"target="_blank" rel="external nofollow noopener noreferrer">github.com/ouaisfieu/magasin</a>.</li>
+<li><strong>Remplacer</strong> les fichiers et <strong>éditer</strong> <code>manifest.json</code> (un item = <code>title</code>, <code>description</code>, <code>url</code>, <code>type</code>, <code>tags</code>, <code>created</code>, <code>thumb</code> …). Utilise les docs du dépôt (<em>guide bibliothèque, légende des badges, FAQ</em>). </li>
+<li><strong>Publier</strong> avec GitHub Pages (branche <code>main</code> → <code>gh-pages</code> ou Pages projet). C’est tout.</li>
+</ol>
+<blockquote>
+<p>Astuce : garde des <strong>chemins relatifs</strong> dans le manifest pour rester portable sur GitHub Pages et sites en sous-répertoire. </p></blockquote>
+<hr>
+<h2 class="heading-element" id="quelques-conseils-éditoriaux-avant-diffusion-large"><span>Quelques conseils éditoriaux (avant diffusion large)</span>
+  <a href="#quelques-conseils-%c3%a9ditoriaux-avant-diffusion-large" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><ul>
+<li><strong>Retirer du manifest</strong> toute mention de <strong>mot de passe</strong> ou d’information sensible.</li>
+<li><strong>Harmoniser les dates &amp; titres</strong> (ISO 8601, style clair), éviter les chemins absolus et les noms de fichiers avec espaces/emoji. </li>
+<li><strong>Compresser les vignettes</strong> (WebP/AVIF, ≤ 120 Ko) pour garder l’expérience fluide, surtout mobile. </li>
+<li><strong>Corriger les métadonnées sociales</strong> (<code>og:url</code> doit pointer vers la bonne URL de la démo). </li>
+</ul>
+<hr>
+<h2 class="heading-element" id="en-deux-mots"><span>En deux mots</span>
+  <a href="#en-deux-mots" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Le <strong>Magasin</strong> est un <strong>excellent gabarit</strong> pour rendre des contenus <strong>trouvables</strong> et <strong>désirables</strong> en quelques minutes. La démonstration prouve que <strong>performance, accessibilité et sobriété</strong> peuvent rimer avec <strong>plaisir de lecture</strong>.
+➡️ <strong>Testez la démo</strong>, piochez dans les <strong>ressources citoyennes</strong>, puis <strong>réappropriez-vous</strong> l’outil pour votre propre corpus.</p>
+<!-- raw HTML omitted -->
+<h1 class="heading-element" id="pourquoi-cet-audit-"><span>Pourquoi cet audit ?</span>
+  <a href="#pourquoi-cet-audit-" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h1><p>Le <strong>Magasin de fichiers</strong> est une bibliothèque 100 % statique alimentée par un <code>manifest.json</code> et un unique <code>index.html</code>. L’interface offre recherche, filtres, aperçus et un basculement clair/sombre. L’objectif de cet article est de passer en revue <strong>ce qui marche très bien</strong>, <strong>ce qui doit être corrigé en priorité</strong>, et <strong>les améliorations utiles à court terme</strong>.</p>
+<blockquote>
+<p>Base d’analyse : le code fourni (<code>index.html</code>, <code>manifest.json</code>) et la version live. L’appli est pensée pour fonctionner <em>sans base de données</em> et charge le manifeste au runtime.  </p></blockquote>
+<hr>
+<h2 class="heading-element" id="ce-qui-fonctionne-vraiment-bien"><span>Ce qui fonctionne vraiment bien</span>
+  <a href="#ce-qui-fonctionne-vraiment-bien" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><ul>
+<li>
+<p><strong>Architecture minimaliste et portable.</strong> Le couple <code>index.html</code> + <code>manifest.json</code> suffit ; l’index précharge le manifeste et construit l’UI en mémoire. C’est simple à déployer (GitHub Pages, dossier statique, etc.). </p>
+</li>
+<li>
+<p><strong>Excellente performance perçue.</strong>
+Le gabarit utilise <code>content-visibility:auto</code> + <code>contain-intrinsic-size</code> pour réduire le <strong>CLS</strong> sur les cartes, des vignettes <code>loading=&quot;lazy&quot;</code>, et une grille responsive — de bons choix pour atteindre 100/100 en perf mobile. </p>
+</li>
+<li>
+<p><strong>Recherche et tri utiles.</strong>
+Normalisation des accents (NFD + strip diacritics) pour des recherches « à la française » plus tolérantes ; tri par pertinence, date, taille et titre. </p>
+</li>
+<li>
+<p><strong>Accessibilité soignée pour un projet front léger.</strong>
+Libellés ARIA sur les blocs, puces <em>chips</em> accessibles au clavier (<code>role=&quot;button&quot;</code>, <code>aria-pressed</code>) et modal fermable au clic hors contenu. </p>
+</li>
+<li>
+<p><strong>Design cohérent dark/light.</strong>
+Variables CSS, <code>meta color-scheme</code>, bascule de thème persistée en <code>localStorage</code>. </p>
+</li>
+</ul>
+<hr>
+<h2 class="heading-element" id="limites-et-risques-priorité-haute"><span>Limites et risques (priorité haute)</span>
+  <a href="#limites-et-risques-priorit%c3%a9-haute" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><ol>
+<li>
+<p><strong>Chemins incohérents dans le manifeste.</strong>
+Mélange d’URLs <strong>absolues</strong> (<code>/pdfs/...</code>, <code>/☯ VALEURS.zip</code>) et <strong>relatives</strong> (<code>pdfs/Article-PKM.pdf</code>, <code>images/smoke.png</code>). Sur GitHub Pages (projet), les chemins commençant par <code>/</code> pointent vers la racine du domaine et risquent de <strong>casser</strong> en production. Standardiser <strong>en relatif</strong> ou calculer une base dynamique. </p>
+</li>
+<li>
+<p><strong>Caractères spéciaux et espaces dans les noms de fichiers.</strong>
+Exemples : <code>Guide Obsidian pas à pas.pdf</code>, <code>☯ ASTRO.zip</code>. Ça rend les liens fragiles (encodage <code>%20</code>, UTF-8), surtout combiné à des chemins absolus. Renommer en <em>kebab-case</em> ASCII côté fichiers ou <strong>URL-encoder systématiquement</strong> côté manifeste. </p>
+</li>
+<li>
+<p><strong>Mot de passe exposé publiquement dans le manifeste.</strong>
+Plusieurs items affichent <em>« Mot de passe : batman1234 »</em> dans <code>note</code>. C’est indexable et archivable ; si ce mot de passe protège vraiment une archive, il est <strong>compromis</strong>. À minima : supprimer la mention publique et placer l’info derrière une page interne authentifiée. </p>
+</li>
+<li>
+<p><strong>Métadonnées sociales incohérentes.</strong>
+<code>og:url</code> pointe vers <code>https://dl.ouaisfi.eu/</code> alors que la démo est servie depuis un autre chemin (<code>…/magasin/</code>). Ça <strong>désaligne</strong> l’aperçu de partage et la canonicalité. Corriger <code>og:url</code> et ajouter <code>&lt;link rel=&quot;canonical&quot;&gt;</code>. </p>
+</li>
+<li>
+<p><strong>Dates farfelues qui biaisent le tri.</strong>
+Des <code>created</code> en <strong>1957</strong> et <strong>1980</strong> faussent les tris par récence et jettent un doute éditorial. Garder des dates ISO réalistes ou laisser vide si inconnu. </p>
+</li>
+<li>
+<p><strong>Tonalité éditoriale hétérogène.</strong>
+Mélange d’intitulés sérieux et de notes <em>private jokes</em> (tags « enfer », « damnation », <em>« Ça vaut pour toux et tousse ! »</em>). Pour un site public, créer des <strong>collections</strong> (public / labo) ou normaliser le ton.</p>
+</li>
+</ol>
+<hr>
+<h2 class="heading-element" id="points-à-améliorer-court-terme"><span>Points à améliorer (court terme)</span>
+  <a href="#points-%c3%a0-am%c3%a9liorer-court-terme" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="a-robustesse-des-liens--encodage"><span>a) Robustesse des liens &amp; encodage</span>
+  <a href="#a-robustesse-des-liens--encodage" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
+<li>
+<p><strong>Uniformiser les URLs</strong> en relatif (recommandé pour GitHub Pages) :
+<code>&quot;/pdfs/...&quot;</code> → <code>&quot;./pdfs/...&quot;</code>, <code>&quot;/☯ VALEURS.zip&quot;</code> → <code>&quot;./zips/valeurs.zip&quot;</code>, etc. </p>
+</li>
+<li>
+<p><strong>Éviter espaces/emoji dans les noms physiques</strong> et les <em>thumbs</em> (ex. <code>thumbs/Hans Fritz.jpg</code>). Renommer côté dépôt et <strong>réécrire</strong> le manifeste.</p>
+</li>
+<li>
+<p><strong>Option code</strong> : calculer une base automatiquement dans <code>index.html</code> et préfixer les URLs du manifeste si besoin.</p>
+</li>
+</ul>
+<h3 class="heading-element" id="b-accessibilité--ux"><span>b) Accessibilité &amp; UX</span>
+  <a href="#b-accessibilit%c3%a9--ux" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
+<li>Ajouter <code>aria-live=&quot;polite&quot;</code> sur le compteur d’items pour annoncer les résultats filtrés. (La zone « Aucun élément… » utilise déjà <code>aria-live</code> : bien vu.) </li>
+<li>Prévoir un <strong>fallback</strong> d’aperçu PDF (certains mobiles bloquent l’embed) : lien « Ouvrir » mis en avant quand l’iframe échoue. </li>
+<li>Limiter la <strong>taille des vignettes</strong> (ex. image &gt; 1,6 Mo) : viser ≤ 120 Ko, WebP/AVIF, largeur 960–1280 px. </li>
+</ul>
+<h3 class="heading-element" id="c-seo--partage"><span>c) SEO &amp; partage</span>
+  <a href="#c-seo--partage" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
+<li>Corriger <code>og:url</code>, ajouter <code>og:image</code> (vignette générique du Magasin), <code>twitter:card</code>, <code>&lt;meta name=&quot;theme-color&quot;&gt;</code>. </li>
+<li>Si l’objectif est la <strong>découvrabilité</strong> des <em>items</em> par moteur de recherche, envisager un <strong>générateur</strong> de pages HTML statiques (une page par item) en plus de l’index JS (le manifeste contient déjà titre/desc/tags). </li>
+</ul>
+<h3 class="heading-element" id="d-gouvernance-éditoriale"><span>d) Gouvernance éditoriale</span>
+  <a href="#d-gouvernance-%c3%a9ditoriale" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
+<li>Définir un <strong>schéma de nommage</strong> (titre, tags, badges, dates) et s’y tenir ; c’est déjà amorcé avec un <em>schema JSON</em> présent dans la bibliothèque — excellent réflexe. </li>
+<li>Séparer <strong>public</strong> (contenus finalisés) et <strong>interne/bêta</strong> (scripts, docs de travail) via un tag <em>collection</em> ou deux manifestes distincts.</li>
+</ul>
+<hr>
+<h2 class="heading-element" id="recommandations-concrètes"><span>Recommandations concrètes</span>
+  <a href="#recommandations-concr%c3%a8tes" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="1-front-matter-social-propre-dans-indexhtml-ou-layout-hugo"><span>1) Front-matter social propre (dans <code>index.html</code> ou layout Hugo)</span>
+  <a href="#1-front-matter-social-propre-dans-indexhtml-ou-layout-hugo" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;canonical&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://ouaisfieu.github.io/magasin/&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:url&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://ouaisfieu.github.io/magasin/&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:title&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Magasin de fichiers – ouaisfi·eu&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:description&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Catalogue statique : recherche, tags, aperçus, téléchargements.&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:type&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;website&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;theme-color&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#0b0c0f&#34;</span>&gt;</span></span></code></pre></div><blockquote>
+<p>Remplacez les URLs par le domaine définitif dès que fixé. L’<code>og:url</code> actuel pointe vers un autre hôte. </p></blockquote>
+<h3 class="heading-element" id="2-exemple-ditem-robuste-à-utiliser-comme-modèle"><span>2) Exemple d’item <strong>robuste</strong> à utiliser comme modèle</span>
+  <a href="#2-exemple-ditem-robuste-%c3%a0-utiliser-comme-mod%c3%a8le" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;guide-obsidian-debutant&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;Guide Obsidian pour débutant·e&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Pas à pas : prise de notes, graph view, organisation.&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;url&#34;</span>: <span style="color:#e6db74">&#34;./pdfs/guide-obsidian-debutant.pdf&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;pdf&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;size&#34;</span>: <span style="color:#ae81ff">71650</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;tags&#34;</span>: [<span style="color:#e6db74">&#34;guide&#34;</span>, <span style="color:#e6db74">&#34;obsidian&#34;</span>],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;created&#34;</span>: <span style="color:#e6db74">&#34;2025-07-29&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;thumb&#34;</span>: <span style="color:#e6db74">&#34;./thumbs/obsidian-guide.webp&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;badges&#34;</span>: [<span style="color:#e6db74">&#34;star&#34;</span>]
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p><strong>Règles appliquées</strong> : chemins relatifs, noms ASCII en <em>kebab-case</em>, date réaliste (ISO 8601), vignette optimisée, badges sobres. (Les exemples actuels montrent l’intérêt des badges mais cumulent caractères spéciaux et chemins absolus.) </p>
+<h3 class="heading-element" id="3-nettoyage--grand-public-"><span>3) Nettoyage « grand public »</span>
+  <a href="#3-nettoyage--grand-public-" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
+<li>Retirer les mots de passe du manifeste et des notes. </li>
+<li>Retirer ou déplacer les entrées « labo/privées » (<code>enfer</code>, <code>damnation</code>, dates 1957/1980) vers un manifeste séparé. </li>
+<li>Harmoniser les descriptions (80–160 car.) et les <em>tags</em> (liste fermée).</li>
+</ul>
+<hr>
+<h2 class="heading-element" id="verdict"><span>Verdict</span>
+  <a href="#verdict" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Un <strong>très bon socle</strong> : interface claire, performances exemplaires, recherche utile, design propre. Les principaux écueils tiennent <strong>au manifeste</strong> (chemins, encodage, mots de passe, dates) et à quelques <strong>métadonnées sociales</strong>. En corrigeant ces points, le Magasin devient un <strong>template solide</strong> pour publier des bibliothèques de ressources versionnées et partageables.</p>
+<hr>
+<h2 class="heading-element" id="check-list-rapide-pour-la-prochaine-release"><span>Check-list rapide pour la prochaine release</span>
+  <a href="#check-list-rapide-pour-la-prochaine-release" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><ul>
+<li data-task=" " title="Unchecked"><i class="checkbox-icon fa-fw fa-regular fa-square" aria-hidden="true"></i>Tous les <code>url</code>/<code>thumb</code> en <strong>relatif</strong> et sans espace/emoji. </li>
+<li data-task=" " title="Unchecked"><i class="checkbox-icon fa-fw fa-regular fa-square" aria-hidden="true"></i>Suppression des <strong>mots de passe</strong> du manifeste. </li>
+<li data-task=" " title="Unchecked"><i class="checkbox-icon fa-fw fa-regular fa-square" aria-hidden="true"></i>Dates <code>created</code> réalistes (ISO). </li>
+<li data-task=" " title="Unchecked"><i class="checkbox-icon fa-fw fa-regular fa-square" aria-hidden="true"></i><code>og:url</code> corrigé (+ canonical, twitter card). </li>
+<li data-task=" " title="Unchecked"><i class="checkbox-icon fa-fw fa-regular fa-square" aria-hidden="true"></i>Vignettes compressées (≤ 120 Ko, WebP/AVIF). </li>
+<li data-task=" " title="Unchecked"><i class="checkbox-icon fa-fw fa-regular fa-square" aria-hidden="true"></i><code>aria-live</code> sur le compteur de résultats. </li>
+</ul>
+<hr>
+<h3 class="heading-element" id="notes-techniques-repérées-dans-le-code"><span>Notes techniques repérées dans le code</span>
+  <a href="#notes-techniques-rep%c3%a9r%c3%a9es-dans-le-code" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
+<li>Anti-CLS sur les cartes : <code>content-visibility:auto; contain-intrinsic-size:320px 300px;</code> ✔︎ </li>
+<li>Recherche tolérante aux accents : normalisation NFD + strip diacritics ✔︎ </li>
+<li>Tri par pertinence puis récence par défaut ✔︎ </li>
+<li>Aperçu modal : image/vidéo/audio/PDF/MD, fallback sur « ouvrir/télécharger » ✔︎ </li>
+<li>Limitation des <strong>chips de tags</strong> aux 24 plus fréquents (évite le bruit) ✔︎ </li>
+</ul>
+<hr>
+<a href="https://dl.ouaisfi.eu/" title="Notre corpus"target="_blank" rel="external nofollow noopener noreferrer" class="card-link"><span class="cl-backdrop" style="--cl-bg-url: url(/tuto/images/fixit.min.svg);"></span>
+    <span class="cl-content">
+      <span class="cl-text">
+        <span class="cl-title">Magasin de fichiers en action</span>
+        <span class="cl-meta">
+          <svg class="cl-icon-link" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M574 665.4c-3.1-3.1-8.2-3.1-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8c-3.1-3.1-8.2-3.1-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zM832.6 191.4c-84.6-84.6-221.5-84.6-306 0L410.3 307.6c-3.1 3.1-3.1 8.2 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6c-3.1 3.1-3.1 8.2 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1z" fill="#a9a9b3"></path><path d="M610.1 372.3c-3.1-3.1-8.2-3.1-11.3 0L372.3 598.7c-3.1 3.1-3.1 8.2 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z" fill="#a9a9b3"></path></svg>
+          <span class="cl-url">https://dl.ouaisfi.eu/</span>
+        </span>
+      </span><i class="fa-solid fa-newspaper cl-shortcut-icon"></i></span></a>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod"><span title="Updated on 2025-08-22 00:00:00">Updated on 2025-08-22&nbsp;</span>
+      </div><div class="post-info-license">
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="vscode://file/C:%5cUsers%5cyanni%5cOneDrive%5ctuto%5ccontent%5cstress-test-magasin.md" title="Open in editor"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-vscode">Open in editor</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="Share on X" data-sharer="twitter" data-url="http://localhost:1313/tuto/stress-test-magasin/" data-title="Notre Magasin De Fichiers &#43; Audit Critique"><i class="fa-brands fa-x-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/tuto/stress-test-magasin/"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/tuto/stress-test-magasin/" data-title="Notre Magasin De Fichiers &#43; Audit Critique"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"></section>
+    <section><span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/tuto/">Home</a></span>
+    </section>
+  </div><div class="post-nav"><a href="/tuto/extreme-droite-en-belgique-depuis-1945/" class="post-nav-item" rel="prev" title="L&#39;extrême Droite en Belgique Depuis 1945 : Entre Cordon Sanitaire Et Contamination Idéologique"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>L&#39;extrême Droite en Belgique Depuis 1945 : Entre Cordon Sanitaire Et Contamination Idéologique</a><a href="/tuto/kits-fichiers-thematiques/" class="post-nav-item" rel="next" title="Les Kits De Fichiers Thématiques : Une Nouvelle Façon D&#39;Apprendre">Les Kits De Fichiers Thématiques : Une Nouvelle Façon D&#39;Apprendre<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article>
+
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.148.1"><img class="hugo-icon" src="/tuto/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.4.0-alpha-20250823084643-0f68046a"><img class="fixit-icon" src="/tuto/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2025</span><span class="author" itemprop="copyrightHolder">
+              <a href="/tuto/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/tuto/lib/cookieconsent/cookieconsent.min.css"><script src="/tuto/lib/sharer/sharer.min.js" async defer></script><script src="/tuto/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"version":"v0.4.0-alpha-20250823084643-0f68046a"};console.log('Page config:', window.config);</script><script src="/tuto/js/theme.min.js" defer></script></body>
+</html>
